@@ -15,14 +15,14 @@ export default function Home() {
         </div>
       </div>
       <section className="bg-gray-100 py-9">
-        <div className="flex justify-center gap-4">
+        <div className="flex justify-center gap-4 p-4 flex-col md:flex-row">
           <Image
             src="/home-hero.webp"
             alt="home-hero"
             width={580}
             height={400}
           />
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 p-3">
             <h1 className="text-2xl">
               Inspiring Care, Comfort, and Change in our Communities
             </h1>
