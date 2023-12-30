@@ -1,4 +1,5 @@
 import { CardGroup } from '@/components/ui-kit/card-group';
+import { Footer } from '@/components/ui-kit/footer';
 import { NavbarFirst } from '@/components/ui-kit/navbar-first';
 import { NavigationMenuSecondary } from '@/components/ui-kit/navigation-menu';
 import { Button } from '@/components/ui/button';
@@ -9,18 +10,20 @@ export default function Home() {
     <main className="w-full">
       <NavbarFirst />
       <div className="flex w-full items-center">
-        <span className="ps-10">LOGO</span>
+        <span className="ps-10">
+          <Image src="/logo.svg" alt="fd" width={400} height={100} />
+        </span>
         <div className="flex justify-center w-full h-20">
           <NavigationMenuSecondary />
         </div>
       </div>
       <section className="bg-gray-100 py-9">
-        <div className="flex justify-center gap-4 p-4 flex-col md:flex-row">
+        <div className="flex justify-center gap-4 p-4 flex-col lg:flex-row">
           <Image
             src="/home-hero.webp"
             alt="home-hero"
-            width={580}
-            height={400}
+            width={1200}
+            height={1200}
           />
           <div className="flex flex-col gap-4 p-3">
             <h1 className="text-2xl">
@@ -52,10 +55,11 @@ export default function Home() {
           We hold ourselves to a higher standard.
         </h1>
       </section>
-
+      {/* card groups */}
       <section>
         <CardGroup />
       </section>
+      <Footer />
     </main>
   );
 }
