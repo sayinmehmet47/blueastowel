@@ -22,9 +22,9 @@ export const Testimonial = () => {
               <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>
             </svg>
             <p className="px-6 py-1 text-lg italic">
-              "I've never felt towels this soft before! They're incredibly
-              absorbent and durable too. I've recommended them to all my friends
-              and family. A must-have for any home!"
+              {`"I've never felt towels this soft before! They're incredibly
+    absorbent and durable too. I've recommended them to all my friends
+    and family. A must-have for any home!"`}
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -56,10 +56,10 @@ export const Testimonial = () => {
               ></path>
             </svg>
             <p className="px-6 py-1 text-lg italic">
-              "These towels are a game-changer! They're incredibly soft and
-              absorbent, and they've held up beautifully even after numerous
-              washes. I'm so glad I found this brand - I won't be buying towels
-              from anywhere else!"
+              {`"These towels are a game-changer! They're incredibly soft and
+    absorbent, and they've held up beautifully even after numerous
+    washes. I'm so glad I found this brand - I won't be buying towels
+    from anywhere else!"`}
             </p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
