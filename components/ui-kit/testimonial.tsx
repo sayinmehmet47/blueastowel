@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Testimonial = () => {
   return (
-    <section className="my-8 bg-gradient-to-r from-gray-100 to-gray-200 max-w-7xl mx-auto">
+    <section className="my-8  max-w-7xl mx-auto border-8 border-stone-200">
       <div className="container mx-auto flex flex-col items-center pb-6 mb-4 md:p-10 md:px-12">
         <h1 className="text-4xl font-semibold leadi text-center">
           What our customers are saying about us

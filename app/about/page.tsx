@@ -1,26 +1,31 @@
+import { Card, CardContent } from '@/components/ui/card';
 import React from 'react';
 
 const About = () => {
   return (
     <div className="mt-12">
-      <div className="flex justify-around mt-12">
-        <div className="flex flex-col items-center text-center">
-          <div className="text-4xl mb-4">OMER SAYIN</div>
-          <div>BLUEASTOWEL</div>
-          <div>OWNER</div>
-          <div>SANTA BARBARA. CA 93117</div>
-          <div>blueastowel@gmail.com</div>
-          <div>+1 (480) 330 2295</div>
-        </div>
+      <div className="flex flex-col md:flex-row justify-around mt-12 gap-3">
+        <Card className="bg-stone-100 p-3">
+          <CardContent>
+            <div className="text-lg mb-4 md:text-5xl">OMER SAYIN</div>
+            <div className="text-base md:text-lg">BLUEASTOWEL</div>
+            <div className="text-base md:text-lg">OWNER</div>
+            <div className="text-base md:text-lg">SANTA BARBARA. CA 93117</div>
+            <div className="text-base md:text-lg">blueastowel@gmail.com</div>
+            <div className="text-base md:text-lg">+1 (480) 330 2295</div>
+          </CardContent>
+        </Card>
 
-        <div className="flex flex-col items-center text-center">
-          <div className="text-4xl mb-4">RACHID MOULAY</div>
-          <div>BLUEASTOWEL</div>
-          <div>OWNER</div>
-          <div>SANTA BARBARA. CA 93117</div>
-          <div>blueastowel@gmail.com</div>
-          <div>+1 (805) 895 1706</div>
-        </div>
+        <Card className="bg-stone-100 p-3">
+          <CardContent>
+            <div className="text-lg mb-4 md:text-5xl">RACHID MOULAY</div>
+            <div className="text-base md:text-lg">BLUEASTOWEL</div>
+            <div className="text-base md:text-lg">OWNER</div>
+            <div className="text-base md:text-lg">SANTA BARBARA. CA 93117</div>
+            <div className="text-base md:text-lg">blueastowel@gmail.com</div>
+            <div className="text-base md:text-lg">+1 (805) 895 1706</div>
+          </CardContent>
+        </Card>
       </div>
 
       <iframe
