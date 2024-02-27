@@ -23,10 +23,10 @@ export default function RootLayout({
       <body
         className={cn(
           inter.className,
-          'to-stone-300 flex flex-col min-h-screen'
+          'to-stone-300 flex flex-col min-h-screen max-w-5xl mx-auto'
         )}
       >
-        <NavbarFirst />
+        {/* <NavbarFirst /> */}
         <div className="flex-grow">{children}</div>
         <Footer />
         <WhatsAppButton /> {/* add the WhatsAppButton component */}
