@@ -1,6 +1,4 @@
-import { Blog } from '@/components/ui-kit/card-group';
 import { ProductCarousel } from '@/components/ui-kit/product-carousel';
-import { Testimonial } from '@/components/ui-kit/testimonial';
 import Image from 'next/image';
 import {
   Accordion,
@@ -10,16 +8,14 @@ import {
 } from '@/components/ui/accordion';
 import {
   Menubar,
-  MenubarContent,
-  MenubarItem,
   MenubarMenu,
   MenubarSeparator,
-  MenubarShortcut,
   MenubarTrigger,
 } from '@/components/ui/menubar';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowDownIcon, ArrowRight, DownloadIcon } from 'lucide-react';
+import '../components/ui/corousel/embla.css';
 
 export default function Home() {
   return (
@@ -35,7 +31,7 @@ export default function Home() {
             height={100}
           />
         </Link>
-        <div className="absolute top-32 md:top-12">
+        <div className="absolute top-28 md:top-12">
           <Menubar className="flex h-10 items-center space-x-1 rounded-lg border-none bg-gray-900 p-1 backdrop-filter  bg-opacity-40 text-white">
             <MenubarMenu>
               <MenubarTrigger>Home</MenubarTrigger>
@@ -62,13 +58,13 @@ export default function Home() {
           </h2>
         </div>
       </div>
-      <section className="flex p-8 gap-36 text-sky-900">
-        <div className="flex-auto w-40">
+      <section className="flex p-8 gap-12 md:gap-36 text-sky-900">
+        <div className="flex-auto md:w-36 w-full">
           WHETHER FOR HERMÈS OR MISSONI AFICIONADOS, THE NEWEST URBAN RETREAT IN
           TOWN DRAWS A VOGUISH CROWD WITH ITS UNIQUE DESIGN DWELLINGS ON THE
           BANKS OF THE DOURO RIVER.
         </div>
-        <div className="flex-auto w-24 gap-3 flex flex-col">
+        <div className="flex-auto w-36 gap-3 flex flex-col">
           <div className="flex flex-col gap-3">
             <Button variant="secondary">
               <div className="flex gap-3 items-center">
@@ -90,6 +86,13 @@ export default function Home() {
             </Button>
           </div>
         </div>
+      </section>
+      <section className="text-sky-900 flex justify-center md:justify-end mt-12">
+        <h1 className="w-80">
+          Fashionistas can opt for one of the signature rooms, each inspired by
+          an iconic maison: Kenzo, Etro, Ralph Lauren, Missoni, Hermès, Manuel
+          Canovas, Pierre Frey or Christian Lacroix.
+        </h1>
       </section>
       <section className="m-16">
         <ProductCarousel />

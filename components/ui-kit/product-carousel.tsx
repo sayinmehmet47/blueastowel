@@ -1,16 +1,7 @@
 'use client';
 
 import * as React from 'react';
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
-import { Card, CardContent } from '../ui/card';
-import Image from 'next/image';
+import Carousel from '../ui/corousel/carousel';
 
 const images = [
   '/towel-1.jpeg',
@@ -20,28 +11,10 @@ const images = [
   '/towel-5.jpeg',
 ];
 
+const SLIDE_COUNT = 5;
+const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+const OPTIONS = { loop: true };
+
 export function ProductCarousel() {
-  return (
-    <Carousel className="w-full">
-      <CarouselContent>
-        {images.map((image, index) => (
-          <CarouselItem key={index} className="basis-3/4">
-            <div className="p-1">
-              <Card>
-                <CardContent className="aspect-banner">
-                  <img
-                    src={image}
-                    alt={`Slide ${index + 1}`}
-                    className="w-full h-full object-cover"
-                  />
-                </CardContent>
-              </Card>
-            </div>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious variant="secondary" />
-      <CarouselNext variant="secondary" />
-    </Carousel>
-  );
+  return <Carousel slides={images} options={OPTIONS} />;
 }
