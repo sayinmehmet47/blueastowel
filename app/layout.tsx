@@ -26,7 +26,6 @@ export default function RootLayout({
           'to-stone-300 flex flex-col min-h-screen max-w-7xl mx-auto'
         )}
       >
-        {/* <NavbarFirst /> */}
         <div className="flex-grow">{children}</div>
         {/* <Footer /> */}
         <WhatsAppButton /> {/* add the WhatsAppButton component */}

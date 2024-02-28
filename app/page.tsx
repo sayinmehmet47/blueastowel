@@ -14,7 +14,7 @@ import {
 } from '@/components/ui/menubar';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowDownIcon, ArrowRight, DownloadIcon } from 'lucide-react';
+import { ArrowDownIcon, ArrowRight } from 'lucide-react';
 import '../components/ui/corousel/embla.css';
 
 export default function Home() {
@@ -29,16 +29,21 @@ export default function Home() {
             alt="Logo"
             width={250}
             height={100}
+            className="text-red-100"
           />
         </Link>
         <div className="absolute top-28 md:top-12">
           <Menubar className="flex h-10 items-center space-x-1 rounded-lg border-none bg-gray-900 p-1 backdrop-filter  bg-opacity-40 text-white">
             <MenubarMenu>
-              <MenubarTrigger>Home</MenubarTrigger>
+              <Link href="/">
+                <MenubarTrigger>Home</MenubarTrigger>
+              </Link>
             </MenubarMenu>
             <MenubarSeparator />
             <MenubarMenu>
-              <MenubarTrigger>About</MenubarTrigger>
+              <Link href="/about">
+                <MenubarTrigger>About</MenubarTrigger>
+              </Link>
             </MenubarMenu>
             <MenubarSeparator />
             <MenubarMenu>
@@ -141,8 +146,6 @@ export default function Home() {
           </AccordionItem>
         </Accordion>
       </section>
-      {/* <Blog />
-      <Testimonial /> */}
     </main>
   );
 }
