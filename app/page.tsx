@@ -6,16 +6,12 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import {
-  Menubar,
-  MenubarMenu,
-  MenubarSeparator,
-  MenubarTrigger,
-} from '@/components/ui/menubar';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowDownIcon, ArrowRight } from 'lucide-react';
 import '../components/ui/corousel/embla.css';
+import MenuBar from '@/components/ui-kit/menu-bar';
 
 export default function Home() {
   return (
@@ -32,29 +28,9 @@ export default function Home() {
             className="text-red-100"
           />
         </Link>
-        <div className="absolute top-28 md:top-12">
-          <Menubar className="flex h-10 items-center space-x-1 rounded-lg border-none bg-gray-900 p-1 backdrop-filter  bg-opacity-40 text-white">
-            <MenubarMenu>
-              <Link href="/">
-                <MenubarTrigger>Home</MenubarTrigger>
-              </Link>
-            </MenubarMenu>
-            <MenubarSeparator />
-            <MenubarMenu>
-              <Link href="/about">
-                <MenubarTrigger>About</MenubarTrigger>
-              </Link>
-            </MenubarMenu>
-            <MenubarSeparator />
-            <MenubarMenu>
-              <MenubarTrigger>Process</MenubarTrigger>
-            </MenubarMenu>
-            <MenubarSeparator />
-            <MenubarMenu>
-              <MenubarTrigger>Contact</MenubarTrigger>
-            </MenubarMenu>
-          </Menubar>
-        </div>
+        <MenuBar
+          headerClassName="absolute top-28 md:top-12"
+        />
         <div className="absolute md:text-6xl gap-5 flex flex-col text-white">
           <h1 className="text-6xl md:text-7xl">elevate your quality</h1>
           <h2 className="text-base md:text-xl">
@@ -74,20 +50,24 @@ export default function Home() {
             <Button variant="secondary">
               <div className="flex gap-3 items-center">
                 <span>COLLECTION</span>
-                <ArrowDownIcon />
-              </div>
-            </Button>
-            <Button variant="secondary">
-              <div className="flex gap-3 items-center">
-                <span>QUALITY</span>
-                <ArrowDownIcon />
-              </div>
-            </Button>
-            <Button variant="secondary">
-              <div className="flex gap-3 items-center">
-                <span>CATALOGUE</span>
                 <ArrowRight />
               </div>
+            </Button>
+            <Button variant="secondary">
+            <Link href="/beach-towel-designs">
+              <div className="flex gap-3 items-center">
+                <span>ROUNDED BEACH TOWELS</span>
+                <ArrowRight />
+              </div>
+            </Link>
+            </Button>
+            <Button variant="secondary">
+            <Link href="/references">
+              <div className="flex gap-3 items-center">
+                <span>OUR WORKS</span>
+                <ArrowRight />
+              </div>
+            </Link>
             </Button>
           </div>
         </div>
