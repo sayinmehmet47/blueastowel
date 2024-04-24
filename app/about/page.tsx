@@ -1,3 +1,4 @@
+import MenuBar from '@/components/ui-kit/menu-bar';
 import { NavbarFirst } from '@/components/ui-kit/navbar-first';
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
@@ -6,23 +7,36 @@ import React from 'react';
 const About = () => {
   return (
     <div>
-      <NavbarFirst />
+      <MenuBar headerClassName="bg-sky-300 rounded-lg mt-4 " showLogo={true}/>
       <div className="mt-12 text-sky-900">
         <div className="flex items-center gap-10 flex-col md:flex-row">
-          <div>
-            <Image
-              src="/towel-6.png"
-              alt="towel"
-              width={460}
-              height={342}
-            ></Image>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-40 h-40 relative">
+                <Image src="/about-us/owner-3.png" alt="Owner 3" layout="fill" objectFit="cover" className="rounded-full" />
+              </div>
+              <h2 className="text-xl font-semibold text-center">Rachid Moulay<br/><span className="text-base font-normal">(US founder and chief financial officer)</span></h2>
+            </div>
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-40 h-40 relative">
+                <Image src="/about-us/owner-2.png" alt="Owner 2" layout="fill" objectFit="cover" className="rounded-full" />
+              </div>
+              <h2 className="text-xl font-semibold text-center">Ömer Sayin<br/><span className="text-base font-normal">(USA founder sales marketing manager)</span></h2>
+            </div>
+            <div className="flex flex-col items-center gap-4">
+              <div className="w-40 h-40 relative">
+                <Image src="/about-us/owner-1.png" alt="Owner 1" layout="fill" objectFit="cover" className="rounded-full" />
+              </div>
+              <h2 className="text-xl font-semibold text-center">Osman Türker<br/><span className="text-base font-normal">(Turkey founder sales marketing manager)</span></h2>
+            </div>
           </div>
-          <div className="flex flex-col gap-3 max-w-lg">
+          <div className="flex flex-col gap-3 max-w-lg mt-10 md:mt-0">
             <h1 className="text-5xl">About Us</h1>
             <p>
-              WHETHER FOR HERMÈS OR MISSONI AFICIONADOS, THE NEWEST URBAN
-              RETREAT IN TOWN DRAWS A VOGUISH CROWD WITH ITS UNIQUE DESIGN
-              DWELLINGS ON THE BANKS OF THE DOURO RIVER.
+              Welcome to BlueAstowel, your ultimate destination for premium quality towels. We are dedicated to transforming everyday essentials into a symbol of sophistication and luxury. Our collection ranges from timeless classics to contemporary designs, all crafted to provide unparalleled comfort and durability. At BlueAstowel, we believe in enhancing your bathing experience with our meticulously designed, plush, and absorbent towels. Join us on this journey of redefining comfort and luxury, one towel at a time.
+            </p>
+            <p>
+              Our team, led by our three dedicated owners, is committed to delivering the highest quality products and exceptional customer service. We are proud to serve you and look forward to making your bathing experience a luxurious one.
             </p>
           </div>
         </div>
