@@ -15,7 +15,7 @@ const About = () => {
               <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 relative">
                 <Image src="/about-us/owner-3.png" alt="Owner 3" layout="fill" objectFit="cover" className="rounded-full" />
               </div>
-              <h2 className="text-xl font-semibold text-center">Rachid Moulay<br/><span className="text-base font-normal">(US founder and chief financial officer)</span></h2>
+              <h2 className="text-xl font-semibold text-center">Rachid Moulay<br/><span className="text-base font-normal">(USA founder and chief financial officer)</span></h2>
             </div>
             <div className="flex flex-col items-center gap-4">
               <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 relative">
