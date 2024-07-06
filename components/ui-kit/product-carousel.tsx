@@ -43,5 +43,6 @@ const images = [
 const OPTIONS = { loop: true, };
 
 export function ProductCarousel() {
+  // a comment
   return <Carousel slides={images} options={OPTIONS} />;
 }

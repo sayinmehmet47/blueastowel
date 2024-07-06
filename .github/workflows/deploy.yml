@@ -20,13 +20,14 @@ jobs:
 
     - name: Rsync files to server
       run: |
-        rsync -avz -e "ssh -o StrictHostKeyChecking=no -i hetzner_key.pem" --exclude node_modules --exclude .next . ${{ secrets.HETZNER_USER }}@${{ secrets.HETZNER_IP }}:/root/blueastowel
+        rsync -avz -e "ssh -o StrictHostKeyChecking=no -i /root/blueastowel/hetzner_key.pem" --exclude node_modules --exclude .next . ${{ secrets.HETZNER_USER }}@${{ secrets.HETZNER_IP }}:/root/blueastowel
 
     - name: Install dependencies and build on server
       run: |
-        ssh -o StrictHostKeyChecking=no -i hetzner_key.pem ${{ secrets.HETZNER_USER }}@${{ secrets.HETZNER_IP }} << 'EOF'
+        ssh -o StrictHostKeyChecking=no -i /root/blueastowel/hetzner_key.pem ${{ secrets.HETZNER_USER }}@${{ secrets.HETZNER_IP }} << 'EOF'
           cd /root/blueastowel
           npm install
           npm run build
-          pm2 restart all
+          npm install pm2 -g  # Ensure PM2 is installed
+          pm2 restart all || pm2 start npm --name "blueastowel" -- start
         EOF
