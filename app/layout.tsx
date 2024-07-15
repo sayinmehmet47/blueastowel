@@ -1,10 +1,9 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { NavbarFirst } from '@/components/ui-kit/navbar-first';
-import { Footer } from '@/components/ui-kit/footer';
 import { cn } from '@/lib/utils';
 import WhatsAppButton from '@/components/ui-kit/whatsapp-button';
+import 'yet-another-react-lightbox/styles.css';
 
 const inter = Inter({ subsets: ['latin'] });
 

@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
-import 'yet-another-react-lightbox/styles.css';
 import Lightbox from 'yet-another-react-lightbox';
 
 const OurWorks = () => {

@@ -9,7 +9,7 @@ import {
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { ArrowDownIcon, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import '../components/ui/corousel/embla.css';
 import MenuBar from '@/components/ui-kit/menu-bar';
 
@@ -28,9 +28,7 @@ export default function Home() {
             className="text-red-100"
           />
         </Link>
-        <MenuBar
-          headerClassName="absolute top-28 md:top-12"
-        />
+        <MenuBar headerClassName="absolute top-28 md:top-12" />
         <div className="absolute md:text-6xl gap-5 flex flex-col text-white">
           <h1 className="text-6xl md:text-7xl">elevate your quality</h1>
           <h2 className="text-base md:text-xl">
@@ -54,20 +52,20 @@ export default function Home() {
               </div>
             </Button>
             <Button variant="secondary">
-            <Link href="/beach-towel-designs">
-              <div className="flex gap-3 items-center">
-                <span>ROUNDED BEACH TOWELS</span>
-                <ArrowRight />
-              </div>
-            </Link>
+              <Link href="/beach-towel-designs">
+                <div className="flex gap-3 items-center">
+                  <span>ROUNDED BEACH TOWELS</span>
+                  <ArrowRight />
+                </div>
+              </Link>
             </Button>
             <Button variant="secondary">
-            <Link href="/references">
-              <div className="flex gap-3 items-center">
-                <span>OUR WORKS</span>
-                <ArrowRight />
-              </div>
-            </Link>
+              <Link href="/references">
+                <div className="flex gap-3 items-center">
+                  <span>OUR WORKS</span>
+                  <ArrowRight />
+                </div>
+              </Link>
             </Button>
           </div>
         </div>
