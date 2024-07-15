@@ -49,9 +49,9 @@
     "react-day-picker": "^8.9.1",
     "react-dom": "^18",
     "react-hook-form": "^7.49.0",
-    "react-image-lightbox": "^5.1.4",
     "tailwind-merge": "^2.1.0",
     "tailwindcss-animate": "^1.0.7",
+    "yet-another-react-lightbox": "^3.21.1",
     "zod": "^3.22.4"
   },
   "devDependencies": {
